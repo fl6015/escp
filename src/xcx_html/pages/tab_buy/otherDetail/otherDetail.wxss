@@ -1,0 +1,23 @@
+/* pages/otherDetail/otherDetail.wxss */
+.slide_image{width:750rpx;height:320rpx;display:block;}
+
+.summary_title{font-size:30rpx;margin-bottom:10rpx;}
+.smill_title{margin-right:40rpx;}
+.list_box{width:750rpx;padding-left:20rpx;box-sizing:border-box;}
+.list_box_title{width:710rpx;padding:18rpx 0;box-sizing:border-box;border-bottom:solid 1rpx #E0E5E9;}
+.title_icon{width:32rpx;height:32rpx;border-radius:50%;margin-right:8rpx;}
+.td_l{width:260rpx;height:180rpx;}
+.list_img{width:260rpx;height:180rpx;border-radius:10rpx;}
+.td_r{width:420rpx;height:220rpx;border-bottom:solid 1rpx lightgray;box-sizing:border-box;padding:16rpx 20rpx 16rpx 0;}
+.td_r_t{width:380rpx;}
+.list_title{font-size:25rpx;color:gray;line-height: 1.4;}
+.abstract{font-size:25rpx;color:#423F3F;line-height: 1.5;}
+.fire_icon{width:26rpx;height:26rpx;}
+.td_r_d{width:400rpx;}
+.baseline{align-items:baseline;}
+.sellmuch{margin-left:10rpx;color:#78806A;}
+.money{font-size: 28rpx;color:#E02E24;}
+.buy_money{font-size:40rpx;}
+.delete_money{font-size: 22rpx;color:#A1AEB4;}
+.delete_text{text-decoration:line-through;margin-left:6rpx;}
+.must_icon{height:14rpx;width:14rpx;border-top:solid 1rpx #ffffff;border-right:solid 1rpx #ffffff;transform: rotate(45deg);margin-left:8rpx;}

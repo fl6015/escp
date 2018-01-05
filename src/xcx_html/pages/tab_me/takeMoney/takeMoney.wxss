@@ -1,0 +1,18 @@
+/* pages/tab_me/takeMoney/takeMoney.wxss */
+.container{padding:0 30rpx;}
+.header{height:360rpx;border-bottom:solid 1px lightgray;}
+.money_img{width:110rpx;height:110rpx;border-radius:50%;margin-bottom:30rpx;display:block;}
+.money{margin-bottom:20rpx;font-size:48rpx;color:red;font-weight:bold;}
+
+.text30{font-size:30rpx;color:#818181;}
+.user_info{padding:50rpx 0;}
+.margin_b{margin-bottom:30rpx;}
+
+.how_money{border-top:solid 1rpx lightgray;border-bottom:solid 1rpx lightgray;height:130rpx;}
+.text_icon{font-weight:bold;font-size:40rpx;margin-right:10rpx;}
+.input_money{padding:30rpx;font-size:32rpx;}
+.all_money{height:128rpx;width:110rpx;font-size:32rpx;color:#0BA8E0;line-height:128rpx;text-align:right;}
+
+.take_btn{width:300rpx;height:88rpx;border-radius:44rpx;color:#ffffff;font-size:30rpx;text-align:center;line-height:88rpx;background:linear-gradient(180deg,#59D1F1,#178ED2);margin:70rpx auto 46rpx;}
+
+.footer{line-height: 1.8;}

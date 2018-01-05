@@ -1,0 +1,17 @@
+/* pages/tab_me/myResult/myResult.wxss */
+
+page{background:#F1F1F1;}
+.menu{height:100rpx;font-size:30rpx;background:#ffffff;}
+.menu_item{height:100rpx;text-align:center;line-height:100rpx;position:relative;}
+.l_line{width:2rpx;height:36rpx;position:absolute;right:0;top:32rpx;background:gray;}
+.active_box{width:750rpx;height:6rpx;position:relative;}
+.active_line{position:absolute;background:#4F8DFE;left:0;height:6rpx;top:0;width:80px;transition-duration: 0.4s;}
+
+.container{width:750rpx;padding:0 30rpx;box-sizing:border-box;}
+.header{padding-top:30rpx;padding-bottom:30rpx;border-bottom:solid 1rpx lightgray;}
+.goods_img{width:154rpx;height:118rpx;margin-right:34rpx;background:greenyellow;border-radius:10rpx;}
+.goods_title{font-size:32rpx;}
+.picbox{margin-top:24rpx;align-items:baseline;}
+.newpic{margin-right:30rpx;color:#747474;}
+.red{color:#F24747;font-size:28rpx;}
+.delete{text-decoration:line-through;color:#BCBCBC;font-size:22rpx;}

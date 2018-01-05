@@ -1,0 +1,22 @@
+/* pages/sell/sell.wxss */
+.slide_image{width:750rpx;height:320rpx;}
+
+#scroll_box{width:750rpx;box-sizing:border-box;}
+.left_box{width:180rpx;border-right:solid 1px lightgray;box-sizing:border-box;padding:0 15rpx;}
+.scroll_item{width:150rpx;height:100rpx;line-height:100rpx;text-align:center;color:#7E7E7E;font-size:28rpx;border-bottom:solid 1rpx lightgray;}
+
+.right_box{width:570rpx;box-sizing:border-box;}
+scroll-view{padding:16rpx;box-sizing:border-box;}
+/*.scroll_list{padding:0 15rpx;}
+.title_box{height:80rpx;border-top:solid 1rpx lightgray;}
+.r_line{width:150rpx;height:2rpx;border-radius:50%;background:lightgray;}
+.title{font-size:28rpx;margin:0 20rpx;}
+
+.content_box{}*/
+.goods{border:solid 1rpx lightgray;border-radius:12rpx;padding:16rpx;margin-bottom:14rpx;}
+.goods_image{width:60rpx;height:60rpx;margin-right:18rpx;border-radius:6rpx;}
+.goods_title{font-size:30rpx;}
+.picbox{margin-top:24rpx;align-items:baseline;}
+.newpic{margin-right:30rpx;color:#747474;}
+.red{color:#F24747;font-size:28rpx;}
+.delete{text-decoration:line-through;color:#BCBCBC;font-size:22rpx;}

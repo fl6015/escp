@@ -1,0 +1,10 @@
+/* pages/moneyDetailed/moneyDetailed.wxss */
+page{background:#F1F1F1;}
+.container{padding:0 30rpx;background:#ffffff;}
+.title_box{font-size:30rpx;}
+.list{height:100rpx;border-top:solid 1rpx lightgray;font-size:26rpx;}
+.left{height:100rpx;line-height:100rpx;text-align:left;color:#292929;width:320rpx;}
+.center{height:100rpx;line-height:100rpx;text-align:center;width:150rpx;}
+.right{height:100rpx;line-height:100rpx;text-align:right;color:#292929;width:320rpx;}
+
+button[loading]::before{width:40rpx;height:40rpx;margin-right:15rpx;color:#ffffff;margin-top:-6rpx;}

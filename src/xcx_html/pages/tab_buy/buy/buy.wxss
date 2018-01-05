@@ -1,0 +1,40 @@
+/* pages/buy/buy.wxss */
+.header{position:relative;}
+.absolute_top{position:absolute;top:0;left:0;width:750rpx;z-index:8;}
+.location_icon{width:50rpx;height:50rpx;margin-right:10rpx;padding:5rpx;}
+.search_box{border:solid 2rpx lightgray;border-radius:30rpx;width:480rpx;height:60rpx;padding:0 20rpx;}
+.search_input{margin-left: 8rpx;flex:1;font-size:32rpx;}
+
+.slide_image{width:750rpx;height:inherit;}
+.newsbox{width:750rpx;height:80rpx;padding:0 20rpx;box-sizing:border-box;}
+.news_title{font-size:28rpx;color:#F24500;line-height: 1.4;font-weight:bold;}
+.news_r{height:80rpx;flex:1}
+.news{height:80rpx;}
+.l_line{width:2rpx;height:50rpx;background:lightgray;margin:0 20rpx;}
+.point{width:8rpx;height:8rpx;border-radius:50%;background:#E02E24;margin-right:10rpx;}
+
+.pad_20{padding:20rpx 0;box-sizing:border-box;}
+.menu_icom{width:80rpx;height:80rpx;border-radius:50%;}
+.menu_text{font-size:24rpx;color:gray;margin-top:8rpx;}
+
+.list_box{width:750rpx;padding-left:20rpx;box-sizing:border-box;}
+.list_box_title{width:710rpx;padding:18rpx 0;box-sizing:border-box;border-bottom:solid 1rpx #E0E5E9;}
+.title_icon{width:32rpx;height:32rpx;border-radius:50%;margin-right:8rpx;}
+.td_l{width:260rpx;height:180rpx;}
+.list_img{width:260rpx;height:180rpx;border-radius:10rpx;}
+.td_r{width:420rpx;height:220rpx;border-bottom:solid 1rpx lightgray;box-sizing:border-box;padding:16rpx 20rpx 16rpx 0;}
+.td_r_t{width:380rpx;}
+.list_title{font-size:25rpx;color:gray;line-height: 1.4;}
+.abstract{font-size:25rpx;color:#423F3F;line-height: 1.5;}
+.fire_icon{width:26rpx;height:26rpx;}
+.td_r_d{width:400rpx;}
+.baseline{align-items:baseline;}
+.sellmuch{margin-left:10rpx;color:#78806A;}
+.money{font-size: 28rpx;color:#E02E24;}
+.buy_money{font-size:40rpx;}
+.delete_money{font-size: 22rpx;color:#A1AEB4;}
+.delete_text{text-decoration:line-through;margin-left:6rpx;}
+.buy_btn{width:120rpx;height:60rpx;background:linear-gradient(45deg,#FF5000,#E02E24);color:#ffffff;border-radius:8rpx;font-size: 28rpx;}
+.must_icon{height:14rpx;width:14rpx;border-top:solid 1rpx #ffffff;border-right:solid 1rpx #ffffff;transform: rotate(45deg);margin-left:8rpx;}
+
+button::after{border:none;}

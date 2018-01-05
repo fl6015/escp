@@ -1,0 +1,43 @@
+/* pages/tab_sell/sellGoodsInfo/sellGoodsInfo.wxss */
+.container{padding-bottom:80rpx;}
+.flow_img{width:750rpx;}
+.flow_info{padding:20rpx;}
+.flow_title{font-size:30rpx;color:#393939;margin-bottom:16rpx;}
+.start_time{letter-spacing:2rpx;margin-left:10rpx;}
+.delete{text-decoration:line-through;}
+.color_red{color:#FF5000;}
+.color_orange{color:#FF860D;}
+.small_text{font-size:22rpx;margin-left:36rpx;}
+.baseline{align-items:baseline;margin-top:12rpx;margin-bottom:12rpx;}
+.text{line-height:1.8;}
+
+.left_line{width:8rpx;height:30rpx;margin-right:12rpx;border-radius:3rpx;}
+.bg_blue{background:#00D4E6;}
+.bg_green{background:#42D271;}
+.bg_purple{background:#AB9EF1;}
+.bg_pink{background:#FF80A9;}
+.bg_yellow{background:#FFA93F;}
+.input_{border-bottom:solid 1rpx lightgray;padding-bottom:6rpx;padding-left:20rpx;}
+
+.title{font-size:30rpx;margin-bottom:20rpx;color:#292929;}
+icon{margin-left:30rpx;}
+.wrap{flex-wrap:wrap;padding-bottom:12rpx;}
+.screenshot_box{width:150rpx;height:150rpx;position:relative;margin-right:16rpx;margin-bottom:12rpx;}
+.cancel{position:absolute;right:-10rpx;top:-10rpx;padding:10rpx;}
+.screenshot{width:150rpx;height:150rpx;border-radius:8rpx;}
+.add_img{width:150rpx;height:150rpx;position:relative;border:dashed 1px gray;border-radius:10rpx;}
+.isline{position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;background:#B9B9B9;}
+.add_r{width:68rpx;height:6rpx;}
+.add_l{width:6rpx;height:68rpx;}
+
+.textinfo{border:none;width:670rpx;line-height:1.8;}
+.textarea2{width:690rpx;height:190rpx;box-sizing:border-box;line-height:1.8;padding:20rpx;border:solid 1rpx lightgray;border-radius:12rpx;}
+.pd_l_20{padding-left:20rpx;}
+
+.btn{width:240rpx;height:84rpx;border-radius:42rpx;color:#ffffff;font-size:26rpx;text-align:center;line-height:84rpx;}
+.ok{background:linear-gradient(180deg,#59D1F1,#178ED2);}
+.clear{background:linear-gradient(180deg,#A8C6CF,#517E90);margin-left:100rpx;}
+.m_t30{margin-top:30rpx;}
+.m_t10{margin-top:10rpx;}
+.pd30{padding:20rpx 30rpx;}
+.pd_t30{padding:30rpx 30rpx 0;}

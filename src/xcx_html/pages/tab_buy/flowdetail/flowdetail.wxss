@@ -1,0 +1,16 @@
+/* pages/flowdetail/flowdetail.wxss */
+.flow_img{width:750rpx;}
+.flow_info{padding:20rpx;}
+.flow_title{font-size:30rpx;color:#393939;margin-bottom:26rpx;}
+.delete{text-decoration:line-through;}
+.color_red{color:#FF5000;}
+
+.explain_box{padding:20rpx;}
+.l_line{width:8rpx;height:28rpx;background:#4F8DFE;margin-right:12rpx;}
+.explain_title{font-size:30rpx;color:#393939;}
+.m_t20{margin-top:20rpx;line-height:1.6;text-indent:2em;}
+
+.fixed{position:fixed;bottom:0;left:0;width:750rpx;height:100rpx;}
+.buybtn{width:200rpx;height:100rpx;text-align:center;line-height:100rpx;color:#ffffff;font-size:28rpx;background:#4F8DFE;}
+.fixed_l{width:550rpx;height:100rpx;box-sizing:border-box;padding-left:30rpx;color:#ffffff;background:#2C2D2D;font-size:28rpx;}
+.howmuch{color:#FF5000;margin-right:8rpx;font-size:32rpx;}

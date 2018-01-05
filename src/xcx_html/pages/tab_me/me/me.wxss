@@ -1,0 +1,30 @@
+/* pages/me/me.wxss background:#4F8DFE;*/
+.header{padding:30rpx;background:linear-gradient(0deg,#55B4F6,#4F8DFE);}
+.user_imgbox{width:136rpx;height:136rpx;border:solid 8rpx #429FFE;border-radius:50%;overflow:hidden}
+.user_img{width:136rpx;height:136rpx;background:#ffffff;}
+.user_info{margin-left:20rpx;}
+.user_name{font-size:30rpx;color:#ffffff;margin-bottom:24rpx;}
+.user_phone{font-size:28rpx;color:#ffffff;letter-spacing:4rpx;}
+.set_icon{width:60rpx;height:60rpx;}
+.set_text{color:#ffffff;font-size:28rpx;margin-left:8rpx;}
+.header_b{width:750rpx;height:120rpx;}
+.user_shopimg{width:60rpx;height:60rpx;margin-right:10rpx;}
+.l_line{width:1rpx;height:50rpx;background:#E1DED7;}
+.h_inherit{height:inherit}
+
+.nav{padding:0 20rpx;}
+.nav_up{border-bottom:solid 1rpx #E1DED7;height:100rpx;}
+.title{font-size:32rpx;color:#4A4A4A}
+.must_icon{height:14rpx;width:14rpx;border-top:solid 1rpx #B0B0B0;border-right:solid 1rpx #B0B0B0;transform: rotate(45deg);margin-left:8rpx;}
+.goshopping{width:46rpx;height:46rpx;}
+.itembox{padding:30rpx 0;}
+
+.green_1{color:#BDD72D;font-size:30rpx;}
+.red{color:#F05C5C;font-size:30rpx;}
+.green{color:#46D374;font-size:30rpx;}
+.blue{color:#36DDEB;font-size:30rpx;}
+.yellow{color:#FFBA68;font-size:30rpx;}
+.text_sm{font-size:26rpx;color:#747474;margin-top:12rpx;}
+
+.m_l20{margin-left:20rpx;}
+.h80{height:80rpx;border-bottom:solid 1rpx #E1DED7;}

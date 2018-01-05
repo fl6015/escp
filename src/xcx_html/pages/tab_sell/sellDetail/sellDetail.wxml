@@ -1,0 +1,83 @@
+<!--pages/tab_sell/sellDetail/sellDetail.wxml-->
+<!--pages/flowdetail/flowdetail.wxml-->
+<view class="container">
+<view class="">
+    <image mode="widthFix" src="{{icons.flow}}" class="flow_img"></image>
+</view>
+
+<!--<view class="flow_info">
+    <view class="flow_title">中国移动500M流量</view>
+    <view class="text">原价：<text class="delete">30.00元</text></view>
+    <view class="r_flex_">
+        <view class="text">售价：<text class="color_red">19.50元</text></view>
+        <view class="text">已成交：240</view>
+    </view>
+</view>
+<view class="space_line"></view>-->
+<view class="flow_info">
+    <view class="flow_title">中国移动500M流量</view>
+    <view class="r_flex text">
+        上架时间：<text class="start_time">2017-10-28 20:00</text>
+    </view>
+    <view class="text r_flex baseline">
+        <view class="text">售价：<text class="color_red">19.50元</text></view>
+        <view class="small_text">原价：<text class="delete">30.00元</text></view>
+    </view>
+    <view class="text color_orange">
+        恭喜您，您的商品已售出，正在等待卖家使用完成
+    </view>
+</view>
+<view class="space_line"></view>
+
+<view class="explain_box">
+    <view class="r_flex">
+        <view class="l_line bg_blue"></view>
+        <view class="explain_title">商品描述</view>
+    </view>
+    <view class="text m_t20">
+        <view class="text_info row3">1.只支持广东移动手机号，所充值流量全国通用，当月有效，提交成功后24小时内到账，月底最后2天充值请求将到下个月初充值处理。</view>
+        <view class="rflex_">
+            <view class="r_flex look_must" data-thisid="describe" bindtap="lookMuch">
+                <view>查看更多</view>
+                <view class="must_icon"></view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="space_line"></view>
+
+<view class="r_flex_ end_time">
+    <view class="text">有效期</view>
+    <view class="text">2018年01月28日</view>
+</view>
+<view class="space_line"></view>
+
+<view class="explain_box">
+    <view class="r_flex">
+        <view class="l_line bg_pink"></view>
+        <view class="explain_title">商品使用说明</view>
+    </view>
+    <view class="text m_t20">
+        <view class="text_info row3">1.只支持广东移动手机号，所充值流量全国通用，当月有效，提交成功后24小时内到账，月底最后2天充值请求将到下个月初充值处理。1.只支持广东移动手机号，所充值流量全国通用，当月有效，提交成功后24小时内到账，月底最后2天充值请求将到下个月初充值处理。</view>
+        <view class="rflex_">
+            <view class="r_flex look_must" data-thisid="use" bindtap="lookMuch">
+                <view>查看更多</view>
+                <view class="must_icon"></view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="space_line"></view>
+
+<!-- <view class="r_flex fixed">
+    <view class="r_flex fixed_l">
+        支付金额：<text class="howmuch">19.50</text>元
+    </view>
+    <view class="buy_btn">确认支付</view>
+</view> -->
+
+<view class="rfl_ex m_t30">
+    <view class="ok btn" bindtap="okArbitration">提交信息</view>
+    <view class="clear btn" catchtap="goBack">返回</view>
+</view>
+</view>

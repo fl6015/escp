@@ -1,0 +1,81 @@
+<!--pages/tab_sell/sellGoodsInfo/sellGoodsInfo.wxml-->
+<view class="container">
+    <view class="">
+        <image mode="widthFix" src="{{icons.flow}}" class="flow_img"></image>
+    </view>
+
+    <!--<view class="flow_info">
+        <view class="flow_title">中国移动500M流量</view>
+        <view class="text">原价：<text class="delete">30.00元</text></view>
+        <view class="r_flex_">
+            <view class="text">售价：<text class="color_red">19.50元</text></view>
+            <view class="text">已成交：240</view>
+        </view>
+    </view>-->
+    <view class="flow_info">
+        <view class="flow_title">中国移动500M流量</view>
+        <view class="r_flex text">
+            上架时间：<text class="start_time">2017-10-28 20:00</text>
+        </view>
+        <view class="text r_flex baseline">
+            <view class="text">售价：<text class="color_red">19.50元</text></view>
+            <view class="small_text">原价：<text class="delete">30.00元</text></view>
+        </view>
+        <view class="text color_orange">
+            恭喜您，您的商品已售出，请填写完成商品订单需要的信息以便尽快完成商品销售
+        </view>
+    </view>
+    <view class="space_line"></view>
+
+    <view class="text pd_t30">
+        <view class="title r_flex"><view class="left_line bg_blue"></view>买家输入的手机号</view>
+        <input class="input_" type="number" placeholder="1234567"/>
+    </view>
+
+    <view class="text pd_t30">
+        <view class="title r_flex"><view class="left_line bg_green"></view>买家输入的姓名</view>
+        <input class="input_" type="number" placeholder="姓名：小灯"/>
+    </view>
+
+    <view class="text pd_t30">
+        <view class="title r_flex"><view class="left_line bg_purple"></view>买家输入的多文本信息</view>
+        <view class="pd_l_20">
+            <textarea class="textinfo" bindblur="bindTextAreaBlur" auto-height="true" placeholder="" value="1.只支持广东移动手机号，所充值流量全国通用，当月有效，提交成功后24小时内到账，月底最后2天充值请求将到下个月初充值处理。"/>
+        </view>
+    </view>
+    <view class="space_line m_t30"></view>
+
+    <view class="text pd30">
+        <view class="title r_flex"><view class="left_line bg_pink"></view>上传商品完成截图：</view>
+        <view class="r_flex wrap pd_l_20">
+            <block wx:if="{{addimgarr.length>0}}">
+            <block wx:for="{{addimgarr}}">
+                <view class="screenshot_box">
+                    <icon class="cancel" type="cancel" size="20" data-index="{{index}}" color="#F24747" catchtap="clearImg"/>
+                    <image mode="scaleToFill" data-imgsrc="{{item}}" src="{{item}}" class="screenshot" catchtap="previewImage"/>
+                </view>
+            </block>
+            </block>
+            <view class="add_img" bindtap="addImg">
+                <view class="add_r isline"></view>
+                <view class="add_l isline"></view>
+            </view>
+            <icon type="info" size="22"/>
+        </view>
+    </view>
+    <view class="space_line"></view>
+
+    <view class="text pd30">
+        <view class="title r_flex"><view class="left_line bg_yellow"></view>输入商品完成信息</view>
+        <view class="">
+            <textarea class="textarea2" bindblur="bindTextAreaBlur" placeholder="填写商品完成信息" />
+        </view>
+    </view>
+    <view class="space_line"></view>
+
+    <view class="rfl_ex m_t30">
+        <view class="ok btn" bindtap="okArbitration">确认发布</view>
+        <view class="clear btn" catchtap="goBack">取消</view>
+    </view>
+    
+</view>

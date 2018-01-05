@@ -1,0 +1,18 @@
+<!--pages/tab_me/myWallet/myWallet.wxml-->
+<view class="">
+    <image mode="scaleToFill" src="{{icons.arbApp_bg1}}" class="bg_img"></image>
+    <view class="rfl_ex money_box">
+        <view class="lfl_ex flex1">
+            <view class="money">985.00元</view>
+            <view class="state">可用余额</view>
+            <view class="look_detailed" bindtap="gotoMoneyDetailed">查看明细</view>
+        </view>
+        <view class="lfl_ex flex1">
+            <view class="money">985.00元</view>
+            <view class="state">可用余额</view>
+            <view class="look_detailed" bindtap="gotoMoneyDetailed">查看明细</view>
+        </view>
+    </view>
+    <view class="btn" bindtap="gotoTakeMoney">余额提现</view>
+    <view class="btn down_btn">提现账号管理</view>
+</view>

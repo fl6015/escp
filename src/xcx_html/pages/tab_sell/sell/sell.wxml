@@ -1,0 +1,100 @@
+<!--pages/me/me.wxml-->
+<!--<view class="section">
+  <view class="section__title">普通选择器</view>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">多列选择器</view>
+  <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <view class="picker">
+      当前选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">时间选择器</view>
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      当前选择: {{time}}
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <view class="section__title">日期选择器</view>
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      当前选择: {{date}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">省市区选择器</view>
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>-->
+
+<view class="">
+  <view class="">
+    <swiper indicator-dots="true" indicator-color="#ffffff" indicator-active-color="#3F93D3"
+    autoplay="true" interval="3200" duration="800">
+    <block wx:for="{{imgUrls}}" wx:key="{{this}}">
+        <swiper-item>
+            <image mode="scaleToFill" src="{{item}}" class="slide_image" />
+        </swiper-item>
+    </block>
+    </swiper>
+  </view>
+  <view class="space_line"></view>
+
+  <view class="r_flex" id="scroll_box">
+    <view class="left_box">
+      <scroll-view scroll-y bindscrolltoupper="upper" style="height:{{scroll_h}}px;" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <block wx:for="{{[1,2,3]}}">
+        <view id="green" class="scroll_item">标题11</view>
+        <view id="red"  class="scroll_item">标题22</view>
+        <view id="yellow" class="scroll_item">标题33</view>
+        <view id="blue" class="scroll_item">标题44</view>
+      </block>
+      </scroll-view>
+    </view>
+
+    <view class="right_box" bindtap="gotoSellGoodsInfo">
+      <scroll-view scroll-y style="height:{{scroll_h}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+      <block wx:for="{{[1,2,3,4,5]}}">
+        <!--<view id="green" class="scroll_list">-->
+          <!--<view class="">-->
+            <!--<view class="title_box rfl_ex">
+              <view class="r_line"></view><view class="title">标题11</view><view class="r_line"></view>
+            </view>-->
+            <!--<view class="content_box">-->
+              <view class="goods r_flex_">
+                <view class="">
+                  <view class="r_flex">
+                    <image mode="scaleToFill" src="{{icons.film}}" class="goods_image" />
+                    <view class="goods_title">商品1名称</view>
+                  </view>
+                  <view class="r_flex picbox">
+                    <view class="text newpic">售价：<text class="red">678元</text></view>
+                    <view class="delete">原价：987元</view>
+                  </view>
+                </view>
+                <view class="rfl_ex buy_btn">卖出</view>
+              </view>
+            <!--</view>-->
+          <!--</view>-->
+          <!--<view class="space_line"></view>-->
+        <!--</view>-->
+      </block>
+      </scroll-view>
+      
+    </view>
+  </view>
+</view>

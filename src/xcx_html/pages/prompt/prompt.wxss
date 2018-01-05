@@ -1,0 +1,4 @@
+/* pages/prompt/prompt.wxss */
+.big_icon{width:168rpx;height:168rpx;background:linear-gradient(180deg,#6EEF98,#2FC961);border-radius:50%;padding:10rpx;margin-top:82rpx;}
+.prompt{margin-top:80rpx;font-size:32rpx;color:#323232;}
+.btn{width:300rpx;height:88rpx;border-radius:44rpx;color:#ffffff;font-size:30rpx;text-align:center;line-height:88rpx;background:linear-gradient(180deg,#59D1F1,#178ED2);margin:110rpx auto}

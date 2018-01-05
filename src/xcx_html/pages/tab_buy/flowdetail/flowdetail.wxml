@@ -1,0 +1,32 @@
+<!--pages/flowdetail/flowdetail.wxml-->
+<view class="">
+    <image mode="widthFix" src="{{icons.flow}}" class="flow_img"></image>
+</view>
+
+<view class="flow_info">
+    <view class="flow_title">中国移动500M流量</view>
+    <view class="text">原价：<text class="delete">30.00元</text></view>
+    <view class="r_flex_">
+        <view class="text">售价：<text class="color_red">19.50元</text></view>
+        <view class="text">已成交：240</view>
+    </view>
+</view>
+<view class="space_line"></view>
+
+<view class="explain_box">
+    <view class="r_flex">
+        <view class="l_line"></view>
+        <view class="explain_title">商品使用说明</view>
+    </view>
+    <block wx:for="{{[1,2,3]}}">
+        <view class="text m_t20">1.只支持广东移动手机号，所充值流量全国通用，当月有效，提交成功后24小时内到账，月底最后2天充值请求将到下个月初充值处理。</view>
+    </block>
+</view>
+<view class="space_line"></view>
+
+<view class="r_flex fixed">
+    <view class="r_flex fixed_l">
+        支付金额：<text class="howmuch">19.50</text>元
+    </view>
+    <view class="buybtn">确认支付</view>
+</view>

@@ -1,0 +1,112 @@
+
+<view class="">
+    <view class="r_flex_ header">
+        <view class="r_flex">
+            <view class="user_imgbox rfl_ex">
+                <image mode="aspectFill" src="{{icons.user}}" class="user_img"></image>
+            </view>
+            <view class="user_info">
+                <view class="user_name">用户名</view>
+                <view class="user_phone">15927661341</view>
+            </view>
+        </view>
+        <view class="r_flex_ set_box" bindtap="gotoBindphone">
+            <view class="set_icon">
+                <image mode="aspectFill" src="{{icons.set}}" class="set_icon"></image>
+            </view>
+            <view class="set_text">设置</view>
+        </view>
+    </view>
+
+    <view class="r_flex_ header_b">
+        <view class="rfl_ex flex1 h_inherit" bindtap="gotoMyWallet">
+            <image mode="aspectFill" src="{{icons.money_bag}}" class="user_shopimg"></image>
+            <view class="l_flex">
+                <view class="red">108.50</view>
+                <view class="text">钱包</view>
+            </view>
+        </view>
+        <!-- <view class="l_line"></view> -->
+        <view class="rfl_ex flex1 h_inherit">
+            <image mode="aspectFill" src="{{icons.coupon}}" class="user_shopimg"></image>
+            <view class="l_flex">
+                <view class="yellow">1</view>
+                <view class="text">优惠券</view>
+            </view>
+        </view>
+        <view class="rfl_ex flex1 h_inherit">
+            <image mode="aspectFill" src="{{icons.integral}}" class="user_shopimg"></image>
+            <view class="l_flex">
+                <view class="green_1">108</view>
+                <view class="text">积分</view>
+            </view>
+        </view>
+    </view>
+    <view class="space_line"></view>
+
+    <view class="nav" bindtap="gotoMyResult">
+        <view class="r_flex_ nav_up">
+            <view class="title">我的战绩</view>
+            <view class="r_flex">
+                <view class="text">查看全部</view>
+                <view class="must_icon"></view>
+            </view>
+        </view>
+        <view class="r_flex itembox">
+            <view class="flex1 lfl_ex">
+                <!--<image mode="aspectFill" src="{{icons.goshopping}}" class="goshopping"></image>-->
+                <view class="red">123.00</view>
+                <view class="text_sm">已卖出</view>
+            </view>
+            <view class="flex1 lfl_ex">
+                <view class="green">1234567.00</view>
+                <view class="text_sm">已赚取</view>
+            </view>
+            <view class="flex1 lfl_ex">
+                <view class="blue">1234567.00</view>
+                <view class="text_sm">已买到</view>
+            </view>
+            <view class="flex1 lfl_ex">
+                <view class="yellow">12.00</view>
+                <view class="text_sm">以节省</view>
+            </view>
+        </view>
+    </view>
+    <view class="space_line"></view>
+
+    <view class="nav" bindtap="gotoMyOrder">
+        <view class="r_flex_ nav_up">
+            <view class="title">购买订单</view>
+            <view class="r_flex">
+                <view class="text">查看全部订单</view>
+                <view class="must_icon"></view>
+            </view>
+        </view>
+        <view class="r_flex itembox">
+            <block wx:for="{{['待使用','已完成','仲裁']}}">
+            <view class="flex1 lfl_ex">
+                <image mode="aspectFill" src="{{icons.goshopping}}" class="goshopping"></image>
+                <view class="text_sm">{{item}}</view>
+            </view>
+            </block>
+        </view>
+    </view>
+    <view class="space_line"></view>
+
+    <view class="nav" bindtap="gotoSellOrder">
+        <view class="r_flex_ nav_up">
+            <view class="title">售卖订单</view>
+        </view>
+        <view class="">
+            <block wx:for="{{['出售中','待处理','确认中','已出售','已下架','仲裁']}}">
+            <view class="r_flex_ h80">
+                <view class="r_flex">
+                    <image mode="aspectFill" src="{{icons.goshopping}}" class="goshopping"></image>
+                    <view class="text m_l20">{{item}}</view>
+                </view>
+                <view class="must_icon"></view>
+            </view>
+            </block>
+        </view>
+    </view>
+</view>

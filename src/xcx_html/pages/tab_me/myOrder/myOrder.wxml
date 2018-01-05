@@ -1,0 +1,55 @@
+
+<view class="r_flex_ menu">
+    <block wx:for="{{menu}}">
+        <view class="flex1 menu_item" data-id="{{item.id}}" data-tdindex="{{index}}" bindtap="menuTap" style="color:{{menu_active.active_index===index?'#2270FD':'gray'}}">
+            {{item.text}}<view class="l_line" hidden="{{index===menu.length-1}}"></view>
+        </view>
+    </block>
+</view>
+<view class="active_box">
+    <view class="active_line" style="left:{{menu_active.td_left}}px;transform:translateX({{linespacing}}px)"></view>
+</view>
+
+<view class="container" wx:if="{{menu_active.active_index===0}}">
+    <view class="r_flex header">
+        <image mode="scaleToFill" src="{{icons.film}}" class="goods_img" />
+        <view class="flex1">
+            <view class="goods_title">天堂湾免费浮潜</view>
+            <view class="r_flex picbox">
+                <view class="text newpic">售价：<text class="red">678元</text></view>
+                <view class="delete">原价：987元</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="container" wx:elif="{{menu_active.active_index===1}}">
+    <block wx:for="{{[1,2]}}">
+        <view class="r_flex header">
+            <image mode="scaleToFill" src="{{icons.film}}" class="goods_img" />
+            <view class="flex1">
+                <view class="goods_title">天堂湾免费浮潜</view>
+                <view class="r_flex picbox">
+                    <view class="text newpic">售价：<text class="red">678元</text></view>
+                    <view class="delete">原价：987元</view>
+                </view>
+            </view>
+            <image mode="scaleToFill" src="{{icons.mySalOrd_bg1}}" class="state_img" />
+        </view>
+    </block>
+</view>
+
+<view class="container" wx:else>
+    <block wx:for="{{[1,2,3]}}">
+        <view class="r_flex header">
+            <image mode="scaleToFill" src="{{icons.film}}" class="goods_img" />
+            <view class="flex1">
+                <view class="goods_title">天堂湾免费浮潜</view>
+                <view class="r_flex picbox">
+                    <view class="text newpic">售价：<text class="red">678元</text></view>
+                    <view class="delete">原价：987元</view>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>

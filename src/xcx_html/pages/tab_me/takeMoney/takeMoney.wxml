@@ -1,0 +1,27 @@
+<!--pages/tab_me/takeMoney/takeMoney.wxml-->
+<view class="container">
+    <view class="lfl_ex header">
+        <image class="money_img" src="{{icons.money_bag}}"></image>
+        <view class="money">199.00元</view>
+        <view class="text30">账户可用余额</view>
+    </view>
+
+    <view class="user_info">
+        <view class="text30 margin_b">提现到账号</view>
+        <view class="text30 margin_b">支付宝账户：money@qq.com</view>
+        <view class="text30">支付宝真实姓名：张三</view>
+    </view>
+
+    <view class="r_flex_ how_money">
+        <view class="text_icon">￥</view>
+        <input class="flex1 input_money" type="number" placeholder="请输入不大于可用余额的金额"/>
+        <view class="all_money">全提</view>
+    </view>
+
+    <view class="take_btn">立即提现</view>
+
+    <view class="footer">
+        <view class="text">说明：</view>
+        <view class="text">提现金额不能大于当前可提现余额，提现提交后，下一个工作日到账提现账户</view>
+    </view>
+</view>

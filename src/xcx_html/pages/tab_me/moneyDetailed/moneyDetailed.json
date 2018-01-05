@@ -1,0 +1,8 @@
+{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4F8DFE",
+    "navigationBarTitleText": "流畅淘淘",
+    "navigationBarTextStyle":"#ffffff",
+    "backgroundTextStyle":"dark",
+    "enablePullDownRefresh":true
+  }

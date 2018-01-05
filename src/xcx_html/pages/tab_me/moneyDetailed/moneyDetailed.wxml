@@ -1,0 +1,18 @@
+<!--pages/moneyDetailed/moneyDetailed.wxml-->
+<view class="container">
+    <view class="r_flex_ title_box">
+        <view class="left">时间</view>
+        <view class="center">变动金额</view>
+        <view class="right">变更说明</view>
+    </view>
+    <block wx:for="{{[1,-2,3,-4,-5,6,7,-8,9,4,3,2,1,2,3]}}">
+        <view class="list r_flex_">
+            <view class="left">2017-07-20 06:23</view>
+            <view class="center" style="color:{{item>0?'#28C218':'#EB3042'}}">{{item>0?'+'+99.99:-99.99}}</view>
+            <view class="right">人工调账：市场营销</view>
+        </view>
+    </block>
+</view>
+
+<!--<view class="alert" style="display:{{show_alert==='show_alert'?'block':'none'}}">别扯了，没有数据了</view>-->
+<button disabled class="alert" style="display:{{show_alert==='show_alert'?'block':'none'}}" loading="true">别扯了，没有数据了</button>

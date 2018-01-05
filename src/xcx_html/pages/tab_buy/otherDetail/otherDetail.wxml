@@ -1,0 +1,57 @@
+<!--pages/otherDetail/otherDetail.wxml-->
+<view class="slide_image">
+    <image mode="scaleToFill" src="{{icons.flow}}" class="slide_image" />
+</view>
+<view class="space_line"></view>
+
+<view class="list_box">
+    <view class="lfl_ex list_box_title">
+        <view class="rfl_ex">
+            <view class="summary_title">旅行日记</view>
+        </view>
+        <view class="rfl_ex">
+            <view class="r_flex smill_title">
+                <image mode="aspectFill" src="{{icons.heart_like}}" class="title_icon"></image>
+                <view class="list_title">猜你喜欢</view>
+            </view>
+            <view class="r_flex">
+                <image mode="aspectFill" src="{{icons.heart_like}}" class="title_icon"></image>
+                <view class="list_title">已成交：3621</view>
+            </view>
+        </view>
+    </view>
+    <block wx:for="{{[1,2,3,4]}}" wx:key="{{this}}">
+        <view class="r_flex_" bindtap="gotoBuySuccess">
+            <view class="td_l rfl_ex">
+                <image mode="scaleToFill" src="{{icons.film}}" class="list_img"></image>
+            </view>
+            <view class="td_r l_flex_">
+                <view class="td_r_t abstract">
+                    <image wx:if="{{index%2===0}}" src="{{icons.fire}}" mode="scaleToFill" class="fire_icon"/>
+                    【简介】：流畅淘淘小程序，可从公众号进入。
+                </view>
+                <view class="td_r_d r_flex_">
+                    <view class="l_flex">
+                        <view class="r_flex baseline">
+                            <view class="money">
+                                ￥<text class="buy_money">88</text>
+                            </view>
+                            <view class="text sellmuch">已售38</view>
+                        </view>
+                        <view class="r_flex delete_money">
+                            <view class="">价格</view>
+                            <view class="delete_text">￥128</view>
+                        </view>
+                    </view>
+                    <view class="buy_btn rfl_ex" catchtap="gotoFlowdetail">
+                        <view>购买</view>
+                        <view class="must_icon"></view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </block>
+</view>
+
+<!--<view class="alert">提示信息</view>-->
+<button disabled class="alert" style="display:{{loadinginfo.show_loading==='show_loading'?'block':'none'}}" loading="true">{{loadinginfo.loading_text}}</button>

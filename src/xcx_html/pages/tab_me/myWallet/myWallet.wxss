@@ -1,0 +1,9 @@
+/* pages/tab_me/myWallet/myWallet.wxss */
+
+.bg_img{width:750rpx;height:462rpx;}
+.money_box{width:750rpx;height:400rpx;position:absolute;top:0;left:0;color:#ffffff;}
+.money{color:#DEF663;font-size:40rpx;}
+.state{font-size:32rpx;margin-top:12rpx;}
+.look_detailed{font-size:30rpx;text-decoration:underline;padding:10rpx;}
+.btn{width:300rpx;height:88rpx;border-radius:44rpx;color:#ffffff;font-size:30rpx;text-align:center;line-height:88rpx;background:linear-gradient(180deg,#59D1F1,#178ED2);margin:0 auto}
+.down_btn{margin-top:40rpx;}

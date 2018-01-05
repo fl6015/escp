@@ -1,0 +1,52 @@
+
+<view>
+    <view class="flow_box">
+        <view class="r_flex">
+            <image mode="aspectFit" src="{{icons.mobilephone_fill}}" class="mobilephone"></image>
+            <view class="flow_recharge">流量充值</view>
+        </view>
+        <view class="r_flex m_t30">
+            <image mode="aspectFill" src="{{icons.me_my}}" class="me_my"></image>
+            <!--<view class="phone_number">13512345678</view>-->
+            <input type="number" bindinput="writePhone" class="phone_number flex1" maxlength="11" value="{{phone.num}}"/>
+        </view>
+        <view class="address">{{phone.local}}</view>
+    </view>
+
+    <view class="isbody lfl_ex">
+        <view class="r_flex wrap">
+            <block wx:for="{{flow}}">
+                <view class="flow_itembox rfl_ex">
+                    <view class="choose_item {{choose.num===item.num?'activebox':''}}" bindtap="chooseFlow" data-id="{{item.num}}">
+                        <view class="youhui_box lfl_ex">
+                        <view class="choose_num {{choose.num===item.num?'active':''}}">{{item.num}}</view>
+                        <view class="choose_money {{choose.num===item.num?'active':''}}">{{item.money}}元</view>
+                        <view class="youhui">特惠</view>
+                        </view>
+                    </view>
+                </view>
+            </block>
+        </view>
+        <!--<view class="text m20">- 一次充值超过25元有优惠哦 -</view>-->
+        <!--<view class="buy_flow">立即充值</view>-->
+    </view>
+
+    <view class="local_flow" bindtap="fotoFlowdetail">
+        <block wx:for="{{[1,2,3]}}">
+            <view class="flow_other r_flex_">
+                <view class="">
+                    <view class="bottom_align">
+                        <view class="local_money">22.50<text class="yuan">元</text></view>
+                        <view class="local">全国</view>
+                    </view>
+                    <view class="local_prompt">优惠券：送2元话费券</view>
+                    <view class="text m_t20">2小时内到账生效，当日有效</view>
+                </view>
+                <view class="buy_btn" catchtap="buy">购买</view>
+            </view>
+        </block>
+    </view>
+</view>
+
+
+<view class="alert" style="display:{{alertinfo.show_alert==='show_alert'?'block':'none'}}">{{alertinfo.alert_text}}</view>

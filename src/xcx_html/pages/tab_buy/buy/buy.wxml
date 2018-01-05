@@ -1,0 +1,101 @@
+<!--pages/buy/buy.wxml-->
+<view class="header">
+    <!--<view class="rfl_ex absolute_top">
+        <view class="section">
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                <view class="picker">
+                x:{{region[0]}}，{{region[1]}}，{{region[2]}}
+                </view>
+                <image mode="scaleToFill" src="{{icons.location}}" class="location_icon" />
+            </picker>
+        </view>
+        <view class="r_flex search_box">
+            <icon type="search" color="gray" size="22"/>
+            <input type="text" class="search_input" placeholder="请输入关键字"/>
+        </view>
+    </view>-->
+    <swiper indicator-dots="true" indicator-color="#ffffff" indicator-active-color="#3F93D3"
+    autoplay="true" interval="3200" duration="800" bindtap="gotoOtherDetail">
+        <block wx:for="{{imgUrls}}" wx:key="{{this}}">
+            <swiper-item>
+                <image mode="scaleToFill" src="{{item}}" class="slide_image" />
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+
+<view class="r_flex newsbox">
+    <view class="news_title">流畅 · 头条</view>
+    <view class="l_line"></view>
+    <view class="news_r" bindtap="gotoAdvertisement">
+        <swiper class="news" autoplay="true" interval="3200" duration="800" vertical="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{this}}">
+            <swiper-item class="r_flex">
+                <view>
+                    <view class="r_flex">
+                        <view class="point"></view>
+                        <view class="list_title">最新新闻，欢迎点击关注！！</view>
+                    </view>
+                    <view class="r_flex">
+                        <view class="point"></view>
+                        <view class="list_title">最新新闻，欢迎点击关注！！</view>
+                    </view>
+                </view>
+            </swiper-item>
+        </block>
+        </swiper>
+    </view>
+</view>
+<view class="space_line"></view>
+
+<view>
+    <view class="r_flex wrap">
+        <block wx:for="{{menu}}" wx:key="{{this}}">
+            <view class="lfl_ex pad_20" style="width:{{menum_w}}" id="{{item.text}}" bindtap="gotoDetail">
+                <image mode="aspectFill" src="{{item.img}}" class="menu_icom"></image>
+                <view class="menu_text">{{item.text}}</view>
+            </view>
+        </block>
+    </view>
+</view>
+<view class="space_line"></view>
+
+<view class="list_box">
+    <view class="rfl_ex list_box_title">
+        <image mode="aspectFill" src="{{icons.heart_like}}" class="title_icon"></image>
+        <view class="list_title">猜你喜欢</view>
+    </view>
+    <block wx:for="{{[1,2]}}" wx:key="{{this}}">
+    <view class="r_flex_" bindtap="gotoBuySuccess">
+        <view class="td_l rfl_ex">
+            <image mode="scaleToFill" src="{{icons.film}}" class="list_img"></image>
+        </view>
+        <view class="td_r l_flex_">
+            <view class="td_r_t abstract">
+                <image wx:if="{{index%2===0}}" src="{{icons.fire}}" mode="scaleToFill" class="fire_icon"/>
+                【简介】：流畅淘淘小程序，可从公众号进入。
+            </view>
+            <view class="td_r_d r_flex_">
+                <view class="l_flex">
+                    <view class="r_flex baseline">
+                        <view class="money">
+                            ￥<text class="buy_money">88</text>
+                        </view>
+                        <view class="text sellmuch">已售38</view>
+                    </view>
+                    <view class="r_flex delete_money">
+                        <view class="">价格</view>
+                        <view class="delete_text">￥128</view>
+                    </view>
+                </view>
+                <view class="buy_btn rfl_ex" catchtap="gotoFlowdetail">
+                    <view>购买</view>
+                    <view class="must_icon"></view>
+                </view>
+            </view>
+        </view>
+    </view>
+    </block>
+    
+    <button class="" style="margin:30rpx auto;width:400rpx;height:80rpx;border-radius:40rpx;line-height:80rpx;font-size:30rpx;border:solid 1rpx lightgray" bindtap="gotoOtherDetail">查看更多</button>
+</view>

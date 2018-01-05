@@ -1,0 +1,6 @@
+<!--pages/prompt/prompt.wxml-->
+<view class="lfl_ex">
+  <icon type="success_no_circle" class="big_icon" size="80" color="#ffffff"/>
+  <view class="prompt">提示信息页面</view>
+  <view class="btn down_btn">确定</view>
+</view>

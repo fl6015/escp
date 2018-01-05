@@ -1,0 +1,6 @@
+<!--pages/advertisement/advertisement.wxml-->
+<view class="">
+    <image mode="scaleToFill" src="{{imgUrls}}" class="slide_image" />
+</view>
+<view class="title rfl_ex">如何产生，怎么节省？</view>
+<view class="text">在Chrome中输出resolve可以得到Promise {[[PromiseStatus]]: "pending", [[PromiseValue]]: undefined}，可以看出[[PromiseStatus]]中存储的就是Promise的状态，但是并没有公开访问[[PromiseStatus]]的用户API，所以暂时还无法查询其内部状态。Promise中的then的回调只会被调用一次，因为Promise的状态只会从Pending变为Fulfilled或者Rejected，不可逆。</view>

@@ -1,0 +1,28 @@
+<!--pages/bindPhone/bindPhone.wxml-->
+<view class="container">
+    <view class="r_flex">
+        <image src="{{icons.phone}}" class="input_icon"/>
+        <view class="input_box flex1">
+            <input type="number" class="flex1 text input_frame" placeholder="手机号码"/>
+        </view>
+    </view>
+
+    <view class="r_flex m_tb">
+        <image src="{{icons.security}}" class="input_icon"/>
+        <view class="input_box flex1 r_flex">
+            <input type="text" class="flex1 text input_frame" placeholder="手机号验证码"/>
+            <view class="l_line"></view>
+            <view class="get_code">获取验证码</view>
+        </view>
+    </view>
+</view>
+
+<view class="text explain">
+    说明：<text>您只有在绑定手机号码后，才能在平台进行交易</text>
+</view>
+
+<view class="rfl_ex">
+    <view class="ok btn">确定</view>
+    <view class="clear btn" bindtap="tapClear">取消</view>
+</view>
+

@@ -1,0 +1,38 @@
+<!--pages/buySuccess/buySuccess.wxml-->
+<view class="container">
+    <view class="r_flex header">
+        <image mode="scaleToFill" src="{{icons.film}}" class="goods_img" />
+        <view class="flex1">
+            <view class="goods_title">天堂湾免费浮潜</view>
+            <view class="r_flex picbox">
+                <view class="text newpic">售价：<text class="red">678元</text></view>
+                <view class="delete">原价：987元</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="text m_t30">
+        剩余<text class="red">1天24小时60分钟</text>自动确认使用
+    </view>
+    <view class="text m_t30">
+        <view>卡券信息：<text class="">12345678</text></view>
+        <view class="m_t10">URL信息：<text class="">http://www.baidu.com</text></view>
+    </view>
+    <view class="text m_t30">
+        <text>商品截图信息：</text>
+        <view class="r_flex m_t10">
+            <image mode="scaleToFill" src="{{icons.film}}" class="goods_img" />
+            <image mode="scaleToFill" src="{{icons.film}}" class="goods_img" />
+        </view>
+    </view>
+    <image mode="scaleToFill" src="{{icons.film}}" class="goods_img2" />
+    <view class="text m_t30">
+        活动说明：活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明活动说明
+    </view>
+    
+</view>
+
+<view class="rfl_ex m_t30">
+    <view class="ok btn" bindtap="gotoPrompt">确认使用</view>
+    <view class="clear btn" bindtap="gotoStartArbitration">发起仲裁</view>
+</view>
