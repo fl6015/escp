@@ -1,0 +1,66 @@
+
+
+
+{
+  "pages":[
+    "pages/tab_buy/buy/buy",
+    "pages/tab_buy/startArbitration/startArbitration",
+    "pages/tab_buy/detail/detail",
+    "pages/tab_buy/buySuccess/buySuccess",
+    "pages/tab_buy/flowdetail/flowdetail",
+    "pages/tab_buy/advertisement/advertisement",
+    "pages/tab_buy/otherDetail/otherDetail",
+
+    "pages/tab_sell/sell/sell",
+    "pages/tab_sell/sellGoodsInfo/sellGoodsInfo",
+    "pages/tab_sell/sellDetail/sellDetail",
+    
+    "pages/tab_me/me/me",
+    "pages/tab_me/myResult/myResult",
+    "pages/tab_me/bindPhone/bindPhone",
+    "pages/tab_me/moneyDetailed/moneyDetailed",
+    "pages/tab_me/myWallet/myWallet",
+    "pages/tab_me/takeMoney/takeMoney",
+    "pages/tab_me/myOrder/myOrder",
+    "pages/tab_me/sellOrder/sellOrder",
+
+    "pages/prompt/prompt",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#4F8DFE",
+    "navigationBarTitleText": "流畅淘淘",
+    "navigationBarTextStyle":"#ffffff",
+    "backgroundTextStyle":"dark"
+  },
+  "tabBar": {
+    "color": "#78806A",
+    "selectedColor": "#1296DB",
+    "list": [
+      {
+        "pagePath": "pages/tab_buy/buy/buy",
+        "iconPath": "icon/buy.png",
+        "selectedIconPath": "icon/buy_active.png",
+        "text": "买"
+      },
+      {
+        "pagePath": "pages/tab_sell/sell/sell",
+        "iconPath": "icon/sell.png",
+        "selectedIconPath": "icon/sell_active.png",
+        "text": "卖"
+      },
+      {
+        "pagePath": "pages/tab_me/me/me",
+        "iconPath":"icon/me.png",
+        "selectedIconPath":"icon/me_active.png",
+        "text": "我"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}
